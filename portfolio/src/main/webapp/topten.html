@@ -1,55 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>About Me</title>
-     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 
-  
+<head>
+	<meta charset="UTF-8">
+	<title>About Me</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+	<!-- Load an icon library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Javascript for Bootstrap -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script>
+		loadSelector("#nav", "navbar.html");
+	</script>
+  <script>
+		loadSelector("#social", "socials.html");
+	</script>
+</head>
 
-  </head>
-  <body>
-     
-      <h1 class="jumbotron"> <center> My Top Ten Anime List</center> </h1>
-      <nav>
-    <ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="about.html">About</a></li>
-  <li><a href="gallery.html">Gallery</a></li>
-  <li><a href="poems.html"> Favorite Poems</a></li>
-  <li><a href="topten.html"> My Top Ten Anime </a></li>
+<body>
+	<h1 class="jumbotron">
+		<center> My Top Ten Anime List</center>
+	</h1>
+	<div id="nav"></div>
+	<div class="container">
+		<h3>
+			<ol>
+				<li>FullMetal Alchemist(Series)</li>
+				<li>Erased (Series)</li>
+				<li>Your Name/ Kimi No Na Wa (Film)</li>
+				<li>Weathering With You (Film)</li>
+				<li>Hunter x Hunter (Series)</li>
+				<li>Bleach (Series)</li>
+				<li>Charlotte (Series)</li>
+				<li>Tokyo Ghoul (Series)</li>
+				<li>A Silent Voice (Film)</li>
+				<li>Seven Deadly Sins (Series)</li>
+			</ol>
+		</h3>
+	</div>
+  <div class="container">
+		<br>
+		<img src="media/anime.JPG" alt="Anime characters" class="img-circle" style="width:410px;height:410px;">
+	</div>
+  <div id="social"></div>
+</body>
 
-    </ul>
-      </nav>
-      
-       <div class="container">
-
-
-      
-        <h3>
-        <ol>
-            <li>FullMetal Alchemist(Series)</li>
-            <li>Erased (Series)</li>
-            <li>Your Name/ Kimi No Na Wa (Film)</li>
-            <li>Weathering With You (Film)</li>
-            <li>Hunter x Hunter (Series)</li>
-            <li>Bleach (Series)</li>
-            <li>Charlotte (Series)</li>
-            <li>Tokyo Ghoul (Series)</li>
-            <li>A Silent Voice (Film)</li>
-            <li>Seven Deadly Sins (Series)</li>
-        </ol>
-
-        </h3>
-     
-
-    </div>
-    <!-- Javascript for Bootstrap -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
 </html>
