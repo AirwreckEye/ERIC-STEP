@@ -1,9 +1,64 @@
-#content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 650px;
+.jumbotron {
+  color: white;
+  background-color: black;
+  margin-bottom: 0px;
+}
+.container {
+  margin-top: 0px;
+  text-align: center;
 }
 
-#greeting-container {
-  margin-top: 20px;
+.nav {
+  width: 100%;
+  background-color: blue;
+  overflow: auto;
+}
+
+/* Navbar links */
+.nav a {
+  float: left;
+  text-align: center;
+  /* padding: 12px; */
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 20%;
+}
+
+/* Navbar links on mouse-over */
+.nav a:hover {
+  background-color: #000;
+}
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon {
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+  border-radius: 50%;
+  vertical-align: middle;
+  right: 0;
+}
+
+/* Style the icon bar links */
+.icon a {
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+/* Style the social media icons with color, if you want */
+.icon a:hover {
+  background-color: #000;
+}
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+.github {
+  background: #24292e;
+  color: white;
 }
