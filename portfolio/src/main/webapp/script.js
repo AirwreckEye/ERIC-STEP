@@ -8,7 +8,7 @@
  * @example loadSelector("#social", "socials.html")
  */
 function loadHTML(selector, filename) {
-  $(document).ready(function() {
+  $(document).ready(function () {
     $(selector).load(filename);
   });
 }

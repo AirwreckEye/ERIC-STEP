@@ -1,22 +1,22 @@
 .jumbotron {
-  color:white;
+  color: white;
   background-color: black;
-  margin-bottom:0px
+  margin-bottom: 0px;
 }
 .container {
   margin-top: 0px;
   text-align: center;
 }
-  
+
 .nav {
   width: 100%;
-  background-color:blue;
+  background-color: blue;
   overflow: auto;
 }
 
 /* Navbar links */
 .nav a {
-  float:left;
+  float: left;
   text-align: center;
   /* padding: 12px; */
   color: white;
@@ -36,7 +36,7 @@
   display: inline-block;
   border-radius: 50%;
   vertical-align: middle;
-  right:0;
+  right: 0;
 }
 
 /* Style the icon bar links */
