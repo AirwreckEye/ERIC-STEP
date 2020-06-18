@@ -1,60 +1,77 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>About Me</title>
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
-    <!-- Load an icon library -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <!-- Javascript for Bootstrap -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script>
-      loadHTML("#nav", "navbar.html");
-      loadHTML("#social", "socials.html");
-    </script>
-  </head>
 
-  <body>
-    <h1 class="jumbotron">
-      <center>My Top Ten Anime List</center>
-    </h1>
-    <div id="nav"></div>
-    <div class="container">
-      <h3>
-        <ol>
-          <li>FullMetal Alchemist(Series)</li>
-          <li>Erased (Series)</li>
-          <li>Your Name/ Kimi No Na Wa (Film)</li>
-          <li>Weathering With You (Film)</li>
-          <li>Hunter x Hunter (Series)</li>
-          <li>Bleach (Series)</li>
-          <li>Charlotte (Series)</li>
-          <li>Tokyo Ghoul (Series)</li>
-          <li>A Silent Voice (Film)</li>
-          <li>Seven Deadly Sins (Series)</li>
-        </ol>
-      </h3>
-    </div>
-    <div class="container">
-      <br />
-      <img
+<head>
+	<meta charset="UTF-8" />
+	<title>About Me</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="style.css" />
+	<script src="script.js"></script>
+	<!-- Load an icon library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<!-- Javascript for Bootstrap -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script>
+		loadHTML("#nav", "navbar.html");        
+      loadHTML("#social", "socials.html");
+	</script>
+</head>
+
+<body>
+	<h1 class="jumbotron">
+		<center>My Top Ten Anime List</center>
+	</h1>
+	<div id="nav"></div>
+	<div class="container">
+		<h3>
+			<ol>
+				<li>FullMetal Alchemist(Series)</li>
+				<li>Erased (Series)</li>
+				<li>Your Name/ Kimi No Na Wa (Film)</li>
+				<li>Weathering With You (Film)</li>
+				<li>Hunter x Hunter (Series)</li>
+				<li>Bleach (Series)</li>
+				<li>Charlotte (Series)</li>
+				<li>Tokyo Ghoul (Series)</li>
+				<li>A Silent Voice (Film)</li>
+				<li>Seven Deadly Sins (Series)</li>
+			</ol>
+		</h3>
+	</div>
+	<div class="container">
+		<br />
+		<img
         src="media/anime.JPG"
         alt="Anime characters"
         class="img-circle"
         style="width: 410px; height: 410px;"
       />
     </div>
-    <div id="social"></div>
-  </body>
+
+		<h1 class="jumbotron">
+			<center>Recommendations List</center>
+		</h1>
+		 <div id="recommendation-container"></div>
+		<form action="/toptenrecommendationdata" method="POST">
+
+			<h2>Enter an anime title and type</h2>
+
+			<textarea name="text-input">Title</textarea>
+			<br/><br/>
+
+			<p>Choose some options:</p>
+			<input type="radio" id="anime-film" name="anime-type" value="anime-film">
+			<label for="anime-film">Film</label><br>
+
+			<input type="radio" id="anime-series" name="anime-type" value="anime-series">
+			<label for="anime-series">Series</label><br>
+
+			<input type="submit"/>
+    </form>
+			<div id="social"></div>
+</body>
+
 </html>
